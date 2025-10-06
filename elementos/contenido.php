@@ -3,7 +3,8 @@
 $productos = [
   "Pan de Camas"        => 1.20,
   "Aceitunas aliñadas"  => 2.50,
-  "Tortas de aceite"    => 3.00
+  "Tortas de aceite"    => 3.00,
+  "Miel de abeja"      => 4.75,
 ];
 ?>
 
@@ -17,8 +18,8 @@ $productos = [
     </tr>
   </thead>
   <tbody>
-    <?php
-$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite"];
+  <?php
+$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite", "Miel de abeja"];
 foreach ($productos as $p) {
   echo "<li class='list-group-item'>" . htmlspecialchars($p) . "</li>";
 }
