@@ -18,11 +18,13 @@ $productos = [
     </tr>
   </thead>
   <tbody>
-  <?php
-$productos = ["Pan de Camas", "Aceitunas aliñadas", "Tortas de aceite", "Miel de abeja"];
-foreach ($productos as $p) {
-  echo "<li class='list-group-item'>" . htmlspecialchars($p) . "</li>";
-}
-?>
+ <?php
+  foreach ($productos as $producto => $precio) {
+    echo "<tr>
+            <td>" . htmlspecialchars($producto) . "</td>
+            <td>" . number_format($precio, 2) . "</td>
+          </tr>";
+  }
+  ?>
   </tbody>
 </table>
